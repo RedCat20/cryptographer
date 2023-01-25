@@ -1,0 +1,73 @@
+.resultBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 552px;
+
+  background: #E4EFF0;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+
+  padding: 32px;
+
+  .block:last-child {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+  }
+
+  h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  button {
+    min-width: 225px;
+    height: 56px;
+    background: transparent;
+    border: 1px solid #0E59EC;
+    border-radius: 12px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 8px;
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
+    }
+
+    span {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #0E59EC;
+    }
+
+  }
+}
+
+.message {
+  margin-top: 5px;
+  color: green;
+}
